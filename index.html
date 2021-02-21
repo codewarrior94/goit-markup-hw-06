@@ -435,16 +435,74 @@
           </li>
         </ul>
       </div>
+      <div class="subscription">
+        <h2 class="subscription__label">Подпишитесь на рассылку</h2>
+        <form class="subscription__form" name="subscription__form">
+          <input class="subscription__email" type="text" name="subscription__email" placeholder="E-mail">
+          <button class="subscription__button" type="submit">Подписаться
+            <svg class="subscription__icon">
+              <use href="./img/sprite.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </footer>
   <!-- modal window section -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="modtal-close-btn" data-modal-close>
+
+      <button type="button" class="modtal-close-btn" data-modal-close>
         <svg class="close-modal-btn-logo">
           <use href="./img/sprite.svg#x"></use>
         </svg>
       </button>
+
+      <p class="modal__label">Оставьте свои данные, мы вам перезвоним</p>
+
+      <form action="#" class="modal__form">
+
+        <label class="modal__form-label">
+          Имя
+          <span class="modal__form-input--wrapper">
+            <input type="text" name="user-name" id="" class="modal__form-input">
+            <svg class="modal__form--ico">
+              <use href="./img/sprite.svg#user-ico"></use>
+            </svg>
+          </span>
+        </label>
+
+        <label class="modal__form-label">
+          Телефон
+          <span class="modal__form-input--wrapper">
+            <input type="tel" name="user-phone" id="" class="modal__form-input">
+            <svg class="modal__form--ico">
+              <use href="./img/sprite.svg#user-tel-ico"></use>
+            </svg>
+          </span>
+        </label>
+
+        <label class="modal__form-label">
+          Почта
+          <span class="modal__form-input--wrapper">
+            <input type="email" name="user-mail" id="" class="modal__form-input">
+            <svg class="modal__form--ico">
+              <use href="./img/sprite.svg#user-email-ico"></use>
+            </svg>
+          </span>
+        </label>
+
+        <label class="modal__form-label">
+          Комментарий
+          <textarea name="user-feedback" class="modal__form-textarea" placeholder="Введите текст"></textarea>
+        </label>
+
+        <input type="checkbox" name="user-policy" id="user-policy" class="user__policy--checkbox visually-hidden">
+        <label for="user-policy" class="user__policy--label">Соглашаюсь с рассылкой и принимаю
+          <a class="user__policy--offert" href="#">Условия договора</a></label>
+
+        <button type="submit" class="modal__form--button">Отправить</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
