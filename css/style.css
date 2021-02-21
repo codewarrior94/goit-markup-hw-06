@@ -532,11 +532,11 @@ img {
 }
 
 .footer-social__wrapper {
-  /* padding-top: 70px; */
   margin-left: 70px;
 }
 
-.footer-social__wrapper--label {
+.footer-social__wrapper--label,
+.subscription__label {
   padding-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -548,7 +548,6 @@ img {
 
 .social-list--footer{
   width: 200px;
-  height: 80px;
   margin: 0;
   padding: 0;
 }
@@ -571,6 +570,64 @@ img {
 
 .social-list__icon--footer {
   fill: var(--additional-text-color)
+}
+
+.subscription{
+  padding-left: 93px;
+}
+
+.subscription__form {
+  display: flex;
+  align-items: center;
+}
+
+.subscription__email{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.subscription__email::placeholder {
+  color: currentColor;
+}
+
+.subscription__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--main-logo-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--additional-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--additional-text-color);
+  cursor: pointer;
+  border: none;
+}
+
+.subscription__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: currentColor;
 }
 
 /* ========== END FOOTER ========== */
